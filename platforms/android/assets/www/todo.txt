@@ -1,0 +1,52 @@
+
+
+Bugs:
+- scrolling back from page 3 on plants tab takes you to page 1
+
+New Features:
+- combine a maxed out tiger and maxed out lion to get a liger
+- markets fluctuate, the more you sell, the less its worth
+- increase the amount of items you craft at a time
+- putting the right auxilary with the right animals gets you new items
+- different color schemes for auxilary animals
+- plants have a very small chance of creating a new plant species
+- can upgrade bears to get panda, or can craft with rice and bamboo
+- settings button on bottom menu
+- music
+
+TO DO:
+- test
+
+Next Patch:
+- music
+- settings
+- notifications
+- upgrades for all animals
+- release on itunes
+- feedback button
+- redo tutorial
+
+Tutorial Overview:
+- overview
+- money
+ROOMS
+- rooms overview
+- pastures vs fields
+- collecting and times
+- selling and upgrading
+- buying rooms
+ANIMALS
+- animal overview
+- slots
+- buying animals
+- buy tabs
+- auxilary animals
+- locked animals
+ITEMS
+- items overview
+- selling items
+- crafting animals and items
+FOOTER
+- saving game
+- items dex
+- animals dex

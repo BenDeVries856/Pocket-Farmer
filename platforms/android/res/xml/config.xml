@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.devries.pocketfarmer" version="1.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://colorgame.bendevries.com/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SQLitePlugin">
+        <param name="android-package" value="io.sqlc.SQLitePlugin" />
+    </feature>
+    <name>Pocket Farmer</name>
+    <description>
+        Farm and collect various different plant and animal species and harvest
+        there drops to craft new animals.
+    </description>
+    <author email="dev@cordova.apache.org" href="www.colorgame.com">
+        Ben DeVries Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="www/icons/android/icon-36-ldpi.png" />
+    <icon density="mdpi" src="www/icons/android/icon-48-mdpi.png" />
+    <icon density="hdpi" src="www/icons/android/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="www/icons/android/icon-96-xhdpi.png" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>

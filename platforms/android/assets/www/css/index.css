@@ -1,0 +1,1068 @@
+
+@font-face {
+    font-family: yoster;
+    src: url(../fonts/yoster.ttf);
+    /**font-size: 2em;**/
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#element::-webkit-scrollbar {
+    display: none;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.active {
+  box-shadow:inset 0px 0px 0px 3px white;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+html, body {
+  top: 0;
+  left: 0;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/menu/splashscreen.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  z-index: 10;
+}
+
+#content {
+  background: #0097FE;
+  background: -webkit-linear-gradient(#0530BD, #74C2FF);
+  background: -o-linear-gradient(#0530BD, #74C2FF);
+  background: -moz-linear-gradient(#0530BD, #74C2FF);
+  background: linear-gradient(#0530BD, #74C2FF);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#footer-toggle {
+  position: fixed;
+  background-image: url("../img/menu/menubutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#header h2 {
+  text-align: center;
+  color: white;
+  font-family: yoster;
+}
+
+#buy-button {
+  color: white;
+  background-image: url("../img/menu/buymenubutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  left: 0;
+  text-align: center;
+  margin: 10px;
+}
+
+#buy-button:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#craft-button {
+  color: white;
+  background-image: url("../img/menu/craftmenubutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  margin: 10px;
+  z-index: 3;
+}
+
+#craft-button:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.slot {
+  position: relative;
+  background-image: url("../img/menu/slot.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: white;
+}
+
+.slot-2 {
+  position: relative;
+  background-color: #444444;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+}
+
+.inv-count {
+  position: absolute;
+  color: white;
+  font-family: yoster;
+  bottom: 15%;
+  right: 15%;
+}
+
+.slot-active {
+  box-shadow:inset 0px 0px 0px 3px white;
+}
+
+.r-top-slot:active {
+  box-shadow:inset 0px 0px 0px 3px white;
+}
+
+.inner-slot {
+  display: inline-block;
+  width: 80%;
+  height: 80%;
+  margin-top: 10%;
+}
+
+.inner-slot img {
+  width: 100%;
+  height: 100%;
+}
+
+#sell-slot, #room-sellslot {
+  background-image: url("../img/menu/sellslot.png");
+  background-size: 100% 100%;
+}
+
+#upgrade-slot {
+  background-image: url("../img/menu/upgradeslot.png");
+  background-size: 100% 100%;
+}
+
+#tap-slot {
+  background-image: url("../img/menu/tapslot.png");
+  background-size: 100% 100%;
+}
+
+#buyroom-text {
+  font-family: yoster;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 30%;
+}
+
+/** floor menu **/
+#floormenu {
+  background-color: #666666;
+  position: fixed;
+  z-index: 4;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 55%;
+  top: 45%;
+}
+
+#room-title {
+  color: white;
+  font-family: yoster;
+  position: fixed;
+  top: 46%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#room-animals {
+  position: fixed;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+}
+
+#room-items {
+  position: fixed;
+  top: 72%;
+  width: 100%;
+  text-align: center;
+}
+
+#room-sell {
+  position: fixed;
+  top: 84%;
+  width: 100%;
+  text-align: center;
+}
+
+#collect-btn {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  top: 37%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #555555;
+}
+
+#collect-btn:active {
+  color: white;
+  background-color: #555555;
+}
+
+.btn-enabled {
+  background-color: #cccccc;
+}
+
+.btn-disabled {
+  background-color: #555555;
+}
+
+#room-next {
+  color: white;
+  font-family: yoster;
+  background-image: url("../img/menu/menubutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: relative;
+  left: 63%;
+  width: 25%;
+  top: 72%;
+  text-align: center;
+  padding: 5px;
+}
+
+#room-next:active {
+  color: black;
+  background-image: url("../img/menu/menubuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#room-collect {
+  font-family: yoster;
+  position: relative;
+  left: 63%;
+  width: 25%;
+  top: 74%;
+  text-align: center;
+  padding: 5px;
+}
+
+#room-collect:active {
+  color: black;
+  background-image: url("../img/menu/menubuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.rcollect-active {
+  color: white;
+  background-image: url("../img/menu/menubutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.rcollect-disabled {
+  color: black;
+  background-image: url("../img/menu/menubuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.inner {
+  display: inline-block;
+}
+
+/** buy menu **/
+#buymenu {
+  background-color: #B56DD5;
+  position: fixed;
+  z-index: 4;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#animals-tab {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+#plants-tab {
+  position: fixed;
+  left: 20%;
+  bottom: 0;
+  width: 20%;
+}
+
+#auxilary-tab {
+  position: fixed;
+  left: 40%;
+  bottom: 0;
+  width: 20%;
+}
+
+.animaltab-active {
+  background-image: url("../img/menu/animaltabactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.planttab-active {
+  background-image: url("../img/menu/planttabactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.auxilarytab-active {
+  background-image: url("../img/menu/auxilarytabactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.animaltab-inactive {
+  background-image: url("../img/menu/animaltab.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.planttab-inactive {
+  background-image: url("../img/menu/planttab.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.auxilarytab-inactive {
+  background-image: url("../img/menu/auxilarytab.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#buy-selection {
+  width: 100%;
+  height: 100%;
+}
+
+#buy-title {
+  color: white;
+  font-family: yoster;
+  margin: 20px;
+}
+
+.buy-animal {
+  font-family: yoster;
+  background-image: url("../img/menu/menuanimal.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  color: white;
+  height: 15%;
+  margin: 20px;
+}
+
+.buy-animal-img {
+  display: inline-block;
+  background-image: url("../img/menu/slot.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  width: 40%;
+  height: 75%;
+  float: left;
+}
+
+.buy-animal-text {
+  display: inline-block;
+  width: 60%;
+  height: 75%;
+  float: right;
+  text-align: center;
+}
+
+.buy-locked {
+  color: white;
+  font-family: yoster;
+  background-image: url("../img/menu/menuanimallocked.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  height: 15%;
+  margin: 20px;
+}
+
+.buy-locked-img {
+  display: hidden;
+}
+
+.buy-locked-text {
+  display: inline-block;
+  width: 60%;
+  height: 75%;
+  float: right;
+  text-align: center;
+}
+
+#buy-next {
+  font-family: yoster;
+  background-image: url("../img/menu/menubutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+  width: 30%;
+  float: right;
+  margin-right: 10%;
+}
+
+#buy-next:active {
+  font-family: yoster;
+  background-image: url("../img/menu/menubuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  color: white;
+}
+
+#buy-prev {
+  font-family: yoster;
+  background-image: url("../img/menu/menubutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+  width: 30%;
+  float: left;
+  margin-left: 10%;
+}
+
+#buy-prev:active {
+  font-family: yoster;
+  background-image: url("../img/menu/menubuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  color: white;
+}
+
+/** crafting menu **/
+#craftmenu {
+  position: fixed;
+  z-index: 4;
+  width: 75%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+#crafting {
+  position: fixed;
+  width: 75%;
+  text-align: center;
+}
+
+#craft-title {
+  position: fixed;
+  right: 20px;
+  top: 5px;
+  color: white;
+  font-family: yoster;
+}
+
+#items-lbl {
+  font-family: yoster;
+  color: white;
+  background-image: url("../img/menu/dexrowunlocked.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  padding: 5px;
+}
+
+#animals-lbl {
+  font-family: yoster;
+  color: white;
+  background-image: url("../img/menu/dexrowunlocked.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 17%;
+  width: 70%;
+  text-align: center;
+  padding: 5px;
+}
+
+#craft-btn {
+  font-family: yoster;
+  color: white;
+  background-image: url("../img/menu/menubutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+}
+
+#craft-btn:active {
+  font-family: yoster;
+  color: black;
+  background-image: url("../img/menu/menubuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#craft-next {
+  color: white;
+  font-family: yoster;
+  background-image: url("../img/menu/menubutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: relative;
+  left: 65%;
+  text-align: center;
+  padding: 5px;
+}
+
+#craft-next:active {
+  font-family: yoster;
+  background-image: url("../img/menu/menubuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  color: nlack;
+}
+
+#crafting-inv {
+  position: fixed;
+  width: 75%;
+  text-align: center;
+}
+
+#collect-floor {
+  background-image: url("../img/menu/collectfloor.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  bottom: 0;
+}
+
+/** all pop-up classes **/
+.popup {
+  position: fixed;
+  background-image: url("../img/menu/popup.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  z-index: 3;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  font-family: yoster;
+}
+
+#popup-top-half {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+#popup-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+
+#popup-bottom-half {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.popup-btn {
+  position: absolute;
+  background-image: url("../img/menu/popupbutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  z-index: 4;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup-cancel {
+  position: absolute;
+  background-image: url("../img/menu/popupbutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  z-index: 4;
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+}
+
+#popup-btn-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#popup-btn-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: white;
+  font-family: yoster;
+}
+
+.popup-btn:active {
+  background-image: url("../img/menu/popupbuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.popup-cancel:active {
+  background-image: url("../img/menu/popupbuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+/** footer buttons **/
+#save-button {
+  color: white;
+  background-image: url("../img/menu/savebutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+#save-label {
+  position: fixed;
+  color: white;
+  font-family: yoster;
+  bottom: 0;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 0.85em;
+}
+
+#save-button:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#cheat-button {
+  color: white;
+  background-image: url("../img/menu/cheatbutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+#cheat-label {
+  position: fixed;
+  color: white;
+  font-family: yoster;
+  bottom: 0;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 0.85em;
+}
+
+#cheat-button:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+/** play/pause button **/
+#pause-button {
+  color: white;
+  background-image: url("../img/menu/pausebutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+#pause-label {
+  position: fixed;
+  color: white;
+  font-family: yoster;
+  bottom: 0;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 0.85em;
+}
+
+#item-dex {
+  color: white;
+  background-image: url("../img/menu/itemdexbutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+#itemdex-label {
+  position: fixed;
+  color: white;
+  font-family: yoster;
+  bottom: 0;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 0.85em;
+}
+
+#item-dex:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#animal-dex {
+  color: white;
+  background-image: url("../img/menu/animaldexbutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+#animaldex-label {
+  position: fixed;
+  color: white;
+  font-family: yoster;
+  bottom: 0;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 0.85em;
+}
+
+#animal-dex:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#tutorial-button {
+  color: white;
+  background-image: url("../img/menu/tutorialbutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+#tutorial-label {
+  position: fixed;
+  color: white;
+  font-family: yoster;
+  bottom: 0;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 0.85em;
+}
+
+#tutorial-button:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+/** dex menu **/
+#dexmenu {
+  background-image: url("../img/menu/dex.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  z-index: 4;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+}
+
+#dex-title {
+  background-image: url("../img/menu/dexheader.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#dex-title-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-family: yoster;
+}
+
+.dex-row {
+  background-image: url("../img/menu/dexrowunlocked.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  color: white;
+  font-family: yoster;
+  padding: 10px;
+  padding-left: 10px;
+  width: 100%;
+  border-bottom: medium none #8B41AC;
+}
+
+.dex-image {
+  position: absolute;
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  height: 25px;
+  width: 25px;
+}
+
+.dex-row-num {
+  position: absolute;
+  right: 10px;
+}
+
+/** tutorial **/
+#tutorialmenu {
+  position: fixed;
+  background-color: #8B41AC;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+#tut-close {
+  position: fixed;
+  background-image: url("../img/menu/closebutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  left: 15px;
+  top: 15px;
+  z-index: 5;
+}
+
+#tut-title {
+  position: fixed;
+  top: 15px;
+  color: white;
+  font-family: yoster;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#tut-close:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#tut-prev {
+  position: fixed;
+  background-image: url("../img/menu/prevbutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+#tut-prev:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#tut-next {
+  position: fixed;
+  background-image: url("../img/menu/nextbutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+#tut-next:active {
+  background-image: url("../img/menu/squarebuttonactive.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+#tut-frame {
+  background-image: url("../img/tut/rooms1.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  height: 75%;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#tut-rooms {
+  background-image: url("../img/menu/squarebutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  height: 10%;
+  width: 25%;
+  left: 0;
+  bottom: 0;
+}
+
+#tut-animals {
+  background-image: url("../img/menu/squarebutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  height: 10%;
+  width: 25%;
+  left: 25%;
+  bottom: 0;
+}
+
+#tut-items {
+  background-image: url("../img/menu/squarebutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  height: 10%;
+  width: 25%;
+  left: 50%;
+  bottom: 0;
+}
+
+#tut-footer {
+  background-image: url("../img/menu/squarebutton.png");
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  height: 10%;
+  width: 25%;
+  left: 75%;
+  bottom: 0;
+}
+
+.tut-tab {
+  position: absolute;
+  color: white;
+  font-family: yoster;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

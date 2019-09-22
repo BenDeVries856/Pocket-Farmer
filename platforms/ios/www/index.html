@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>ColorGame</title>
+    </head>
+    <body>
+
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/objects.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+
+        <div id="splash-screen"></div>
+
+        <div id="content">
+          <div id="header">
+            <div id="buy-button"></div>
+            <h2></h2></div>
+            <div id="craft-button"></div>
+
+          <!--popup menus-->
+
+          <!-- buy menu -->
+          <div id="buymenu">
+            <div id="buy-selection">
+              <span id="buy-prev">Back</span>
+              <span id="buy-next">Next</span>
+            </div>
+            <div id="animals-tab" class="animaltab-active"></div>
+            <div id="plants-tab" class="planttab-inactive"></div>
+            <div id="auxilary-tab" class="auxilarytab-inactive"></div>
+          </div>
+
+          <!-- craft menu -->
+          <div id="craftmenu">
+            <div id="craft-title"><h3>Craft Menu</h3></div>
+              <div id="items-lbl">&nbsp;</div>
+              <div id="crafting"><div class="inner">
+                <span id="craft1" class="slot r-top-slot" index="0"></span>
+                <span id="craft2" class="slot r-top-slot" index="1"></span>
+                <span id="craft3" class="slot r-top-slot" index="2"></span>
+              </div></div>
+              <div id="craft-btn">Craft</div>
+              <div id="crafting-inv"><div class="inner">
+                <div class="crow">
+                <span id="citems1" class="slot r-top-slot" index="0"></span>
+                <span id="citems2" class="slot r-top-slot" index="1"></span>
+                <span id="citems3" class="slot r-top-slot" index="2"></span>
+              </div><div class="crow">
+                <span id="citems4" class="slot r-top-slot" index="3"></span>
+                <span id="citems5" class="slot r-top-slot" index="4"></span>
+                <span id="citems6" class="slot r-top-slot" index="5"></span>
+              </div><div class="crow">
+                <span id="citems7" class="slot r-top-slot" index="6"></span>
+                <span id="citems8" class="slot r-top-slot" index="7"></span>
+                <span id="citems9" class="slot r-top-slot" index="8"></span>
+              </div><div class="crow">
+                <span id="sell-slot" class="slot r-top-slot"></span>
+                <span id="tap-slot" class="slot r-top-slot"></span>
+                <span id="hslot2" class="slot r-top-slot hidden"></span>
+              </div>
+              </div></div>
+              <div id="craft-next">Next</div>
+          </div>
+
+          <!-- floor menu -->
+          <div id="floormenu">
+            <div id="room-title"><h2>Room</h2></div>
+            <div id="animals-lbl">&nbsp;</div>
+            <div id="room-animals"><div class="inner">
+              <span id="ranimals1" class="slot r-top-slot" index="0"></span>
+              <span id="ranimals2" class="slot r-top-slot" index="1"></span>
+              <span id="ranimals3" class="slot r-top-slot" index="2"></span>
+            </div></div>
+            <div id="room-items"><div class="inner">
+              <span id="ritems1" class="slot" index="0"></span>
+              <span id="ritems2" class="slot" index="1"></span>
+              <span id="ritems3" class="slot" index="2"></span>
+              <span id="ritems4" class="slot" index="3"></span>
+            </div></div>
+            <div id="room-sell"><div class="inner">
+              <span id="room-sellslot" class="slot r-top-slot"></span>
+              <span id="upgrade-slot" class="slot r-top-slot"></span>
+              <span id="hslot" class="slot r-top-slot hidden"></span>
+            </div></div>
+            <div id="room-next">Next</div>
+            <div id="room-collect" class="rcollect-disabled">Collect</div>
+          </div>
+
+          <div id="dexmenu">
+            <div id="dex-title"><div id="dex-title-text"></div></div>
+          </div>
+
+          <div id="tutorialmenu">
+            <div id="tut-close"></div>
+            <div id="tut-title"><h1>Tutorial</h1></div>
+            <div id="tut-frame"></div>
+            <div id="tut-prev"></div>
+            <div id="tut-next"></div>
+            <div id="tut-rooms"><div class="tut-tab">Rooms</div></div>
+            <div id="tut-animals"><div class="tut-tab">Animals</div></div>
+            <div id="tut-items"><div class="tut-tab">Items</div></div>
+            <div id="tut-footer"><div class="tut-tab">Footer</div></div>
+          </div>
+
+          <div id="footer-toggle"></div>
+          <div id="footer">
+            <div id="save-button"></div>
+            <div id="cheat-button"></div>
+            <div id="pause-button"></div>
+            <div id="item-dex"></div>
+            <div id="animal-dex"></div>
+            <div id="tutorial-button"></div>
+            <div id="save-label">Save</div>
+            <div id="cheat-label">Reset</div>
+            <div id="pause-label">Pause</div>
+            <div id="itemdex-label">Items</div>
+            <div id="animaldex-label">Animals</div>
+            <div id="tutorial-label">Tutorial</div>
+          </div>
+
+          <!--<div id="collect-floor"></div>-->
+
+        </div>
+        <!--<canvas id="canvas" width="200" height="100"></canvas>-->
+
+    </body>
+</html>
